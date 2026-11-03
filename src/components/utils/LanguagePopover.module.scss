@@ -1,0 +1,80 @@
+@use "@/scss/index" as *;
+
+.nations_wrapper {
+  position: relative;
+
+  .openBtn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-xs;
+    padding: 6px 12px;
+    transition: background 0.5s ease;
+
+    &:hover {
+      background: $color-gray-100;
+      border-radius: 6px;
+    }
+  }
+}
+
+.languages {
+  width: fit-content;
+
+  .header {
+    margin-bottom: $spacing-md;
+
+    span {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #6b7280; // muted gray
+      letter-spacing: 0.04em;
+      font-weight: 500;
+    }
+  }
+
+  .tabs {
+    display: flex;
+    gap: $spacing-sm;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 10px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+
+      font-size: $font-size-base;
+      font-weight: 500;
+      color: $color-gray-500;
+
+      background: transparent;
+      border: 1px solid transparent;
+
+      transition: all 0.2s ease;
+
+      svg {
+        font-size: $font-size-lg;
+      }
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.04);
+      }
+    }  li.active {
+    background: #eef2ff;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+
+    svg {
+      color: $color-primary;
+    }
+  }
+  }
+
+
+}

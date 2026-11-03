@@ -1,0 +1,112 @@
+{
+  "Navigation": {
+    "community": "Entreprises",
+    "convert": "Particuliers",
+    "contact": "Contact"
+  },
+
+  "Translation": {
+    "english": "English",
+    "french": "Français",
+    "swahili": "Kiswahili"
+  },
+
+  "HomePage": {
+    "heroSection": {
+      "title": "Paiements mondiaux. Directement sur WhatsApp.",
+      "description": "Recevez des paiements, détenez plusieurs devises, échangez des fonds et envoyez de l'argent partout dans le monde—sans jamais quitter WhatsApp.",
+      "cta": "Rejoindre la liste d'attente"
+    },
+
+    "conversionSection": {
+      "title": "La finance mondiale, sur WhatsApp.",
+      "description": "Que vous soyez freelance, travailleur à distance, chef d'entreprise ou que vous souteniez votre famille à l'étranger, Zyra facilite la réception, la détention, la conversion et l'envoi d'argent à l'international via WhatsApp—avec une application mobile dédiée à venir.",
+      "cta": "Obtenir un accès anticipé"
+    }
+  },
+
+  "WaitListFormSection": {
+    "title": "Rejoindre la liste d'attente",
+    "description": "Soyez parmi les premiers à découvrir la finance mondiale sur WhatsApp avec des comptes internationaux, des soldes multidevises et des paiements transfrontaliers fluides.",
+    "cta": "Rejoindre la liste d'attente",
+    "inputFields": {
+      "fullName": {
+        "label": "Nom complet",
+        "error": "Le nom complet est requis"
+      },
+      "email": {
+        "label": "E-mail",
+        "error": "Veuillez saisir une adresse e-mail valide"
+      }
+    }
+  },
+
+  "Modal": {
+    "waitlist": {
+      "title": "Vous êtes sur la",
+      "title_highlight": "liste d'attente !",
+      "description": "Merci de rejoindre la liste d'attente de Zyra. Nous vous informerons dès que l'accès anticipé sera disponible."
+    }
+  },
+
+  "CookieBanner": {
+    "label": "Consentement aux cookies",
+    "message": "Nous utilisons des cookies pour améliorer votre expérience et analyser l'utilisation du site.",
+    "learnMore": "En savoir plus",
+    "accept": "Accepter",
+    "decline": "Refuser"
+  },
+
+  "Footer": {
+    "tag": "WhatsApp. Mondial par conception.",
+    "title": "Paiements mondiaux, conçus sur WhatsApp.",
+    "description": "Zyra est une plateforme financière WhatsApp qui aide les particuliers et les entreprises à recevoir des paiements internationaux, gérer plusieurs devises, échanger des fonds et transférer de l'argent à l'international en toute simplicité.",
+    "navigation": "Navigation",
+    "company": "Entreprise",
+    "socials": "Réseaux sociaux",
+    "copyright": "© 2026 Zyra. Tous droits réservés.",
+    "built": "Conçu sur WhatsApp. Pensé pour le monde entier.",
+    "links": {
+      "community": "Entreprises",
+      "convert": "Particuliers",
+      "contact": "Contact",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation"
+    },
+    "disclaimer": {
+      "paragraph1": "Zyra est une société de technologie financière et non une banque. Les services bancaires et de paiement sont fournis par l'intermédiaire de partenaires financiers agréés.",
+      "paragraph2": "Zyra fournit une technologie permettant aux utilisateurs de recevoir des paiements internationaux, de détenir et d'échanger plusieurs devises, et d'envoyer de l'argent via les réseaux de paiement pris en charge.",
+      "paragraph3": "L'émission de comptes, le traitement des paiements, les règlements, le change et les services financiers connexes sont assurés par des institutions financières et des partenaires de paiement tiers réglementés.",
+      "paragraph4": "Les produits et services peuvent varier selon les pays et sont soumis à des conditions d'éligibilité, des approbations réglementaires, des contrôles de conformité et des limites de transaction.",
+      "paragraph5": "Toutes les marques, logos et noms de marque sont la propriété de leurs détenteurs respectifs."
+    }
+  },
+
+  "FAQ": {
+    "tag": "Des questions ?",
+    "title": "Questions fréquentes",
+    "description": "Tout ce que vous devez savoir sur la réception, la détention et l'envoi d'argent avec Zyra sur WhatsApp.",
+    "items": {
+      "q1": {
+        "question": "Qu'est-ce que Zyra ?",
+        "answer": "Zyra est une plateforme financière basée sur WhatsApp qui permet aux particuliers et aux entreprises de recevoir des paiements internationaux, de détenir plusieurs devises, d'échanger des fonds et d'envoyer de l'argent à l'international—sans jamais quitter WhatsApp."
+      },
+      "q2": {
+        "question": "Dois-je télécharger une application distincte ?",
+        "answer": "Non. Zyra fonctionne entièrement dans WhatsApp, il n'y a donc rien à télécharger pour commencer. Une application mobile dédiée arrivera également bientôt pour les utilisateurs qui le souhaitent."
+      },
+      "q3": {
+        "question": "Quelles devises puis-je détenir et échanger ?",
+        "answer": "Zyra vous permet de détenir plusieurs devises au même endroit et de les convertir à des taux compétitifs, afin de recevoir et d'envoyer des fonds à l'international sans jongler entre plusieurs comptes."
+      },
+      "q4": {
+        "question": "Zyra est-elle une banque ?",
+        "answer": "Non. Zyra est une société de technologie financière, et non une banque. Les services bancaires, de traitement des paiements et de change sont assurés par des institutions financières tierces agréées et réglementées."
+      },
+      "q5": {
+        "question": "Quand pourrai-je commencer à utiliser Zyra ?",
+        "answer": "Zyra est actuellement en accès anticipé. Rejoignez la liste d'attente et nous vous informerons dès que votre compte sera prêt à être activé."
+      }
+    }
+  }
+}

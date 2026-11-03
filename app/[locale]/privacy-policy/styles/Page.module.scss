@@ -1,0 +1,121 @@
+@use "@/scss/index" as *;
+
+.page {
+  width: 100%;
+  padding: $spacing-xl $spacing-md;
+  padding-bottom: 6rem;
+
+  &__inner {
+    width: 100%;
+    max-width: 760px;
+    margin-inline: auto;
+  }
+
+  &__back {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-sm;
+    color: $color-gray-500;
+    font-size: $font-size-sm;
+    text-decoration: none;
+    margin-bottom: $spacing-xl;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__header {
+    margin-bottom: $spacing-xl;
+    padding-bottom: $spacing-xl;
+    border-bottom: 1px solid $color-gray-300;
+  }
+
+  &__tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $color-primary;
+    background: rgba($color-primary, 0.08);
+    padding: 4px 10px;
+    border-radius: $radius-sm;
+    margin-bottom: $spacing-md;
+  }
+
+  &__title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    color: $color-gray-800;
+    line-height: 1.1;
+    margin-bottom: $spacing-md;
+  }
+
+  &__updated {
+    font-size: $font-size-sm;
+    color: $color-gray-500;
+  }
+
+  &__body {
+    display: grid;
+    gap: 2.5rem;
+  }
+}
+
+.section {
+  display: grid;
+  gap: $spacing-md;
+
+  &__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: $color-gray-800;
+    letter-spacing: -0.02em;
+  }
+
+  &__text {
+    font-size: $font-size-base;
+    color: $color-gray-700;
+    line-height: 1.75;
+
+    a {
+      color: $color-primary;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    gap: $spacing-sm;
+    padding-left: $spacing-md;
+
+    li {
+      font-size: $font-size-base;
+      color: $color-gray-700;
+      line-height: 1.75;
+      position: relative;
+
+      &::before {
+        content: "–";
+        position: absolute;
+        left: -$spacing-md;
+        color: $color-primary;
+        font-weight: 600;
+      }
+    }
+  }
+}

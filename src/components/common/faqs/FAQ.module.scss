@@ -1,0 +1,179 @@
+@use "@/scss/index" as *;
+
+.faq {
+  width: 100%;
+  padding: $spacing-md;
+  // color: $color-white;
+  // background-color: black;
+
+  &__wrapper {
+    width: 100%;
+    max-width: $hd;
+    margin: auto;
+    padding: $spacing-md;
+  }
+
+  &__header {
+    width: 100%;
+    max-width: 36rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+
+    margin-bottom: 4rem;
+    margin-inline: auto;
+
+    span {
+      color: $color-accent;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: $letter-spacing-sm;
+    }
+
+    h2 {
+      // color: $color-white;
+      font-size: clamp(2.25rem, 4vw, 3.5rem);
+      line-height: 105%;
+      letter-spacing: -0.05em;
+      font-weight: 600;
+
+      @media screen and (max-width: $sm) {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      // color: rgba($color-white, 0.68);
+      line-height: 170%;
+      font-size: 1rem;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    max-width: 48rem;
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    border-bottom: 1px solid rgba($color-gray-700, 0.08);
+
+    interpolate-size: allow-keywords;
+
+    &:first-child {
+      border-top: 1px solid rgba($color-gray-700, 0.08);
+    }
+
+    &[open] {
+      .faq__icon {
+        transform: rotate(45deg);
+      }
+
+      .faq__question {
+        color: $color-gray-500;
+      }
+    }
+
+    &::details-content {
+      block-size: 0;
+      overflow: hidden;
+      opacity: 0;
+
+      transition:
+        block-size 0.4s cubic-bezier(0.65, 0, 0.35, 1),
+        opacity 0.3s ease,
+        content-visibility 0.4s allow-discrete;
+    }
+
+    &[open]::details-content {
+      block-size: auto;
+      opacity: 1;
+    }
+  }
+
+  &__summary {
+    width: 100%;
+    padding-block: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  &__number {
+    color: rgba($color-gray-700, 0.35);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  &__question {
+    flex: 1;
+
+    color: rgba($color-gray-700, 0.78);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 140%;
+
+    transition: color 0.25s ease;
+
+    @media screen and (max-width: $sm) {
+      font-size: 1rem;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    flex-shrink: 0;
+
+    width: 1rem;
+    height: 1rem;
+
+    transition: transform 0.3s ease;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 70%;
+      left: 70%;
+
+      background: rgba($color-gray-300, 0.9);
+      transform: translate(-50%, -50%);
+    }
+
+    &::before {
+      width: 100%;
+      height: 1.5px;
+    }
+
+    &::after {
+      width: 1.5px;
+      height: 100%;
+    }
+  }
+
+  &__answer {
+    padding-bottom: 1.75rem;
+    padding-right: 3.5rem;
+
+    p {
+      color: rgba($color-gray-700, 0.68);
+      line-height: 170%;
+      font-size: 0.95rem;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@use 'sass:meta';
+@use 'sass:math';
+
+/* Convert px to rem */
+@function rem($px) {
+  @return ($px / 16) * 1rem;
+}
+
+/* Color opacity helper */
+@function rgba-color($color, $opacity) {
+  @return rgba($color, $opacity);
+}
+
+/* Z-index scale */
+$z-index-map: (
+  base: 1,
+  dropdown: 1000,
+  modal: 2000,
+  overlay: 3000
+);
+
+@function useConvertNumberToRem($pixel, $suffix: 1rem, $base: 16) {
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, $base) * $suffix;
+  } @else {
+    @error 'pls remove unit when using useConvertNumberToRem()';
+  }
+}
+
+@function useAdvanceClamp(
+  $min-width,
+  $max-width,
+  $size-at-min-width,
+  $size-at-max-width
+) {
+  @if ($min-width >=$max-width) {
+    @error "min-width cannot be greater than max-width";
+  }
+
+  @if (meta.function-exists('useConvertNumberToRem')) {
+    $slope: calc(
+      ($size-at-max-width - $size-at-min-width) / ($max-width - $min-width)
+    );
+    $y-axis-intersection: -1 * $min-width * $slope + $size-at-min-width;
+    $return-value: clamp(
+      #{useConvertNumberToRem($size-at-min-width)},
+      calc(#{useConvertNumberToRem($y-axis-intersection)} + #{$slope} * 100vw),
+      #{useConvertNumberToRem($size-at-max-width)}
+    );
+    @return $return-value;
+  }
+
+  @error "useConvertNumberToRem function not found";
+}

@@ -1,0 +1,95 @@
+@use "sass:color";
+@use "@/scss/index" as *;
+
+.stats {
+  font-size: 2rem;
+  width: 100%;
+  margin-block: 2.5rem;
+  padding-inline: $spacing-md;
+
+  &__container {
+    display: flex;
+    gap: 1rem;
+
+    width: 100%;
+    max-width: $hd;
+    margin-inline: auto;
+  }
+
+  &__card {
+    flex: 1;
+    min-width: 0;
+
+    background-color: $color-gray-100;
+    padding: $spacing-md;
+    border-radius: 1.25rem;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    transition:
+      flex 0.45s ease,
+      transform 0.35s ease,
+      background-color 0.35s ease,
+      box-shadow 3.5s ease;
+
+    cursor: pointer;
+
+    &:hover {
+      flex: 1.8;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    &_number {
+      font-size: 2.875rem;
+      font-weight: 700;
+      letter-spacing: -0.21rem;
+      color: $color-gray-700;
+
+      transition: color 0.35s ease;
+    }
+
+    h3 {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: $color-gray-700;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+
+      transition: color 0.35s ease;
+    }
+  }
+
+  &__container:hover &__card {
+    flex: 0.9;
+  }
+
+  &__container:hover &__card:hover {
+    flex: 1.8;
+  }
+
+  &__card:first-child {
+    background-color: $color-accent;
+
+    &:hover {
+      background-color: color.adjust($color-accent, $lightness: 3%);
+    }
+  }
+
+  &__card:first-child &__card_number {
+    color: $color-black;
+  }
+
+  @media (max-width: 768px) {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__card,
+    &__container:hover &__card,
+    &__container:hover &__card:hover {
+      flex: unset;
+    }
+  }
+}

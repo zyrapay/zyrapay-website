@@ -1,0 +1,76 @@
+@use './const' as *;
+@use './functions' as *;
+
+/* Flex helpers */
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Text truncation */
+@mixin truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Responsive */
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: 640px) { @content; }
+  }
+  @if $breakpoint == md {
+    @media (max-width: 768px) { @content; }
+  }
+  @if $breakpoint == lg {
+    @media (max-width: 1024px) { @content; }
+  }
+}
+
+/* Utility classes */
+.u-container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: $spacing-md;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-mt-md {
+  margin-top: $spacing-md;
+}
+
+.u-p-md {
+  padding: $spacing-md;
+}
+
+/* Button base */
+.u-btn {
+  padding: $spacing-sm $spacing-md;
+  border-radius: $radius-md;
+  font-size: $font-size-base;
+  transition: all 0.2s ease;
+}
+
+.u-btn-primary {
+  background-color: $color-primary;
+  color: $color-white;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.u-btn-accent {
+  background-color: $color-accent;
+  color: $color-black;
+}

@@ -1,0 +1,108 @@
+/* ========================
+   COLORS
+======================== */
+$color-primary: #2a53f1;
+$color-dark: #000722;
+$color-accent: #c1ff40;
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+$color-gray-100: #f5f5f5;
+$color-gray-300: #d1d1d1;
+$color-gray-500: #737373;
+$color-gray-700: #404040;
+$color-gray-800: #1c1c1c;
+$color-black: #000000;
+/* ========================
+   GRADIENTS
+======================== */
+$bg-section-border: rgba(255, 255, 255, 0.10);
+$gradient-primary: linear-gradient(90deg, #2a53f1 0%, #c1ff40 100%);
+$gradient-secondary: linear-gradient(
+  100deg,
+  #ffffff1d 0%,
+  $color-black 100%
+);
+/* ========================
+   ANIMATIONS
+======================== */
+$keyframe-reveal-up: revealUp;
+$animation-reveal-up: #{$keyframe-reveal-up} 1s cubic-bezier(0.16, 1, 0.3, 1) both 0.1s;
+/* ========================
+   TYPOGRAPHY
+======================== */
+$font-primary: "Uncut Sans", sans-serif;
+
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 2rem;
+$font-size-xxl: 2.5rem;
+
+/* ========================
+   LETTER SPACING
+======================== */
+$letter-spacing-xs: -0.025em;
+$letter-spacing-sm: -0.01em;
+$letter-spacing-md: 0;
+$letter-spacing-lg: 0.01em;
+$letter-spacing-xl: 0.02em;
+
+/* ========================
+   BORDER WIDTH
+======================== */
+$border-xs: 1px;
+$border-sm: 2px;
+$border-md: 3px;
+$border-lg: 4px;
+$border-xl: 5px;
+
+/* ========================
+   SPACING
+======================== */
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 40px;
+
+/* ========================
+   RADIUS
+======================== */
+$radius-sm: 6px;
+$radius-base: 10px;
+$radius-md: 16px;
+$radius-lg: 24px;
+$radius-xl: 32px;
+$radius-xxl: 40px;
+
+/* ========================
+   SHADOWS
+======================== */
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+/* ========================
+   BREAKPOINTS
+======================== */
+
+/* Device-first naming */
+$xxs: 365px;
+$xs: 480px;
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1140px;
+$hd: 1280px;
+$hd: 1440px;
+
+/* ========================
+   CONTAINER WIDTHS
+======================== */
+
+$container-sm: 540px;
+$container-md: 720px;
+$container-lg: 960px;
+$container-xl: 1140px;
+$container-xxl: 1200px;

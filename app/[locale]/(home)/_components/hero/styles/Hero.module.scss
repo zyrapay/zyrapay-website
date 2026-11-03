@@ -1,0 +1,127 @@
+@use "@/scss/index" as *;
+
+@keyframes #{$keyframe-reveal-up} {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  width: 100%;
+  padding: 0 $spacing-md;
+  color: $color-white;
+
+  &_wrapper {
+    background-color: $color-primary;
+    width: 100%;
+    max-width: $hd;
+    height: calc(100vh - 75px);
+    min-height: $xs;
+    max-height: $md;
+    border-radius: $radius-xl;
+    margin: auto;
+    padding: $spacing-md;
+    overflow: hidden;
+
+    position: relative;
+  }
+
+  &_content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: $spacing-xl;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    overflow: hidden;
+
+    &_left {
+      width: 100%;
+      height: 100%;
+      max-width: $sm;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: $spacing-lg;
+      padding: 0 useAdvanceClamp(350, 1140, 12, 56);
+
+      @media screen and (max-width: $md) {
+        justify-content: flex-start;
+      }
+
+      &_top {
+        display: grid;
+        gap: $spacing-md;
+
+        h1 {
+          font-size: useAdvanceClamp(350, 1140, 32, 61.6);
+          line-height: useAdvanceClamp(350, 1140, 36, 61.6);
+          letter-spacing: -0.15rem;
+          font-weight: 500;
+          animation: $animation-reveal-up;
+
+          @media screen and (max-width: $md) {
+            letter-spacing: -0.1rem;
+          }
+        }
+
+        p {
+          max-width: $xs;
+          color: $color-gray-300;
+        }
+      }
+    }
+
+    img {
+      width: 80%;
+      height: 100%;
+      object-fit: contain;
+      animation: $animation-reveal-up;
+
+      @media screen and (max-width: $md) {
+        width: 100%;
+      }
+    }
+
+    &_right {
+      position: absolute;
+      width: 100%;
+      max-width: $sm;
+      right: -5%;
+      bottom: -28.5%;
+
+       justify-self: end;
+      align-self: center;
+
+      @media screen and (max-width: $md) {
+        right: 6.5%;
+        bottom: -15%;
+
+        justify-self: center;
+        margin-top: $spacing-lg;
+      }
+    }
+  }
+}
+
+.border_round {
+  height: 100%;
+  border: 2px solid $bg-section-border;
+  padding: $spacing-md;
+  border-radius: $radius-lg;
+  overflow: hidden;
+
+  @media (max-width: $container-lg) {
+    padding-top: 1rem;
+    padding-inline: 0;
+  }
+}
+
+.hero_image {
+  animation: $animation-reveal-up;
+}
