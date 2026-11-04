@@ -4,7 +4,6 @@ import { useState } from "react";
 import {
   AnimatePresence,
   motion,
-  useReducedMotion,
 } from "motion/react";
 import { Global, Translate } from "iconsax-reactjs";
 import { useLocale, useTranslations } from "next-intl";
@@ -22,7 +21,6 @@ const LanguagePopover = () => {
   const languages = [
     { code: "en", label: t("english") },
     { code: "fr", label: t("french") },
-    { code: "sw", label: t("swahili") },
   ];
 
   const switchLocale = (newLocale: string) => {

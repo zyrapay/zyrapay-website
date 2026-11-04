@@ -7,7 +7,6 @@ import { useState } from "react";
 const languages = [
   { code: "en", label: "English" },
   { code: "fr", label: "Français" },
-  { code: "sw", label: "Kiswahili" },
 ];
 
 export default function LanguageSwitcher() {
