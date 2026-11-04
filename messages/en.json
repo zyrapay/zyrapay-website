@@ -4,30 +4,27 @@
     "convert": "Individuals",
     "contact": "Contact"
   },
-
   "Translation": {
     "english": "English",
     "french": "Français",
     "swahili": "Kiswahili"
   },
-
   "HomePage": {
     "heroSection": {
-      "title": "Global payments. Right on WhatsApp.",
-      "description": "Receive payments, hold multiple currencies, exchange funds, and send money worldwide—all without leaving WhatsApp.",
-      "cta": "Join the waitlist"
+      "titleLine1": "Send euros € home.",
+      "titleLine2": "Pay for anything, anywhere.",
+      "description": "Send euros from France, Canada or the US and let your family pay, save and shop in minutes, with one low fee.",
+      "cta": "Get started"
     },
-
     "conversionSection": {
-      "title": "Global finance, built on WhatsApp.",
-      "description": "Whether you're a freelancer, remote worker, business owner, or supporting family abroad, Zyra makes receiving, holding, converting, and sending money across borders effortless through WhatsApp—with a dedicated mobile app coming soon.",
-      "cta": "Get early access"
+      "title": "One app for money across Africa.",
+      "description": "Whether you're sending money to family, paying bills and shops with a simple scan, saving with a tontine, or running a business that gets paid by QR code, Zyra keeps it all in one place.",
+      "cta": "Get started"
     }
   },
-
   "WaitListFormSection": {
     "title": "Join the Waitlist",
-    "description": "Be among the first to experience WhatsApp global finance with international accounts, multi-currency balances, and seamless cross-border payments.",
+    "description": "Be among the first to send money home and pay for everyday life across Africa with Zyra.",
     "cta": "Join the waitlist",
     "inputFields": {
       "fullName": {
@@ -40,7 +37,6 @@
       }
     }
   },
-
   "Modal": {
     "waitlist": {
       "title": "You're on the",
@@ -48,7 +44,6 @@
       "description": "Thanks for joining the Zyra waitlist. We'll let you know as soon as early access becomes available."
     }
   },
-
   "CookieBanner": {
     "label": "Cookie consent",
     "message": "We use cookies to improve your experience and analyze site usage.",
@@ -56,16 +51,15 @@
     "accept": "Accept",
     "decline": "Decline"
   },
-
   "Footer": {
-    "tag": "WhatsApp. Global by design.",
-    "title": "Global payments, built on WhatsApp.",
-    "description": "Zyra is a WhatsApp financial platform that helps individuals and businesses receive international payments, manage multiple currencies, exchange funds, and move money across borders with ease.",
+    "tag": "Africa and the diaspora, connected.",
+    "title": "Send money home. Pay for anything, anywhere.",
+    "description": "Zyra helps families send money to Africa, pay bills and shops with a simple scan, save together, and helps businesses get paid and track their sales.",
     "navigation": "Navigation",
     "company": "Company",
     "socials": "Socials",
     "copyright": "© 2026 Zyra. All rights reserved.",
-    "built": "Built on WhatsApp. Designed for the world.",
+    "built": "Built for Africa. Designed for the diaspora.",
     "links": {
       "community": "Businesses",
       "convert": "Individuals",
@@ -74,38 +68,134 @@
       "terms": "Terms of Service"
     },
     "disclaimer": {
-      "paragraph1": "Zyra is a financial technology company and is not a bank. Banking and payment services are provided through licensed financial institution partners.",
-      "paragraph2": "Zyra provides technology that enables users to receive international payments, hold and exchange multiple currencies, and send money across supported payment networks.",
-      "paragraph3": "Account issuance, payment processing, settlements, foreign exchange, and related financial services are provided by regulated third-party financial institutions and payment partners.",
+      "paragraph1": "Zyra is a financial technology company and is not a bank. Payment services are provided through licensed financial institution partners.",
+      "paragraph2": "Zyra provides technology that enables users to send money to Africa, pay for goods and services, and, for businesses, accept payments by QR code.",
+      "paragraph3": "Payment processing, settlements, currency conversion, and related financial services are provided by regulated third-party financial institutions and payment partners.",
       "paragraph4": "Products and services may vary by country and are subject to eligibility requirements, regulatory approvals, compliance checks, and transaction limits.",
       "paragraph5": "All trademarks, logos, and brand names are the property of their respective owners."
     }
   },
-
   "FAQ": {
     "tag": "Got questions?",
     "title": "Frequently asked questions",
-    "description": "Everything you need to know about receiving, holding, and sending money with Zyra on WhatsApp.",
-    "items": {
-      "q1": {
-        "question": "What is Zyra?",
-        "answer": "Zyra is a WhatsApp-based financial platform that lets individuals and businesses receive international payments, hold multiple currencies, exchange funds, and send money across borders—all without leaving WhatsApp."
+    "description": "Everything you need to know about sending money home, paying with Zyra, and getting paid as a business.",
+    "groups": {
+      "gettingStarted": {
+        "title": "Getting started",
+        "items": {
+          "q1": {
+            "question": "What is Zyra?",
+            "answer": "Zyra connects Africa and the diaspora. You can send euros from France, Canada or the US, pay bills, shops and services with a simple scan, save with a tontine, and, if you run a business, get paid by QR code."
+          },
+          "q2": {
+            "question": "Who is Zyra for?",
+            "answer": "Anyone sending money to family in Africa, anyone receiving it, and businesses like restaurants, hotels and shops that want to accept payments easily."
+          },
+          "q3": {
+            "question": "Do I need an account?",
+            "answer": "Yes. You sign up with your email and a password."
+          },
+          "q4": {
+            "question": "When can I start using Zyra?",
+            "answer": "Zyra is currently in early access. Join the waitlist and we'll let you know as soon as your account is ready."
+          }
+        }
       },
-      "q2": {
-        "question": "Do I need to download a separate app?",
-        "answer": "No. Zyra runs entirely within WhatsApp, so there's nothing extra to download to get started. A dedicated mobile app is also coming soon for users who want it."
+      "sending": {
+        "title": "Sending money",
+        "items": {
+          "q1": {
+            "question": "Where can I send money?",
+            "answer": "To DR Congo, Senegal, Côte d'Ivoire, Cameroon, Kenya and Morocco. Your recipient receives the money in their local currency."
+          },
+          "q2": {
+            "question": "Which countries can I send from?",
+            "answer": "France, Canada and the United States."
+          },
+          "q3": {
+            "question": "How long does a transfer take?",
+            "answer": "Most transfers take just minutes. Timing can vary depending on the destination country and how you add your money."
+          },
+          "q4": {
+            "question": "How much does it cost?",
+            "answer": "Transfers carry a 0.9% fee. You see the exact fee and the amount your recipient gets before you confirm."
+          },
+          "q5": {
+            "question": "Is the exchange rate fair?",
+            "answer": "Zyra shows you the exchange rate and the exact amount your recipient will receive before you confirm, so you always know what you're getting."
+          },
+          "q6": {
+            "question": "How do I add money?",
+            "answer": "By bank card (instant, 1.5% fee), by bank transfer (SEPA, free, about one business day), or by sending funds from another wallet (free)."
+          },
+          "q7": {
+            "question": "Is there a limit on how much I can send?",
+            "answer": "Limits may apply depending on your country and your verification level. The app shows the limits that apply to you."
+          }
+        }
       },
-      "q3": {
-        "question": "Which currencies can I hold and exchange?",
-        "answer": "Zyra lets you hold multiple currencies in one place and convert between them at competitive rates, so you can receive and send funds internationally without juggling separate accounts."
+      "paying": {
+        "title": "Paying with Zyra",
+        "items": {
+          "q1": {
+            "question": "What can I pay for?",
+            "answer": "Bills, electricity (SNEL), rides (Yango), flights, hotels, online shopping, streaming subscriptions and more, directly from the app."
+          },
+          "q2": {
+            "question": "How does paying by QR code work?",
+            "answer": "Open Zyra, tap Scan, and scan the merchant's QR code. Confirm the amount and you're done. When a merchant has an active payment ready, it also appears on your home screen so you can pay in one tap."
+          },
+          "q3": {
+            "question": "What is a tontine?",
+            "answer": "A savings circle. Everyone contributes a set amount regularly, and each member takes a turn receiving the full pot. In Zyra you create the group, add members by phone number, Zyra ID or bank account, and payments happen inside the app."
+          },
+          "q4": {
+            "question": "Can I talk to someone if I need help?",
+            "answer": "Yes. Tap the chat button on the home screen to message the team or ask the help assistant."
+          }
+        }
       },
-      "q4": {
-        "question": "Is Zyra a bank?",
-        "answer": "No. Zyra is a financial technology company, not a bank. Banking, payment processing, and foreign exchange services are provided through licensed, regulated third-party financial institution partners."
+      "business": {
+        "title": "For businesses",
+        "items": {
+          "q1": {
+            "question": "How does my business accept payments?",
+            "answer": "Create a business account, choose your sector, and enter the amount to collect. Zyra shows a QR code for that payment, your customer scans it, and you're paid."
+          },
+          "q2": {
+            "question": "What kinds of businesses can use Zyra?",
+            "answer": "Restaurants, cafés, bakeries, hotels, guesthouses, supermarkets, grocery stores, butchers and other shops."
+          },
+          "q3": {
+            "question": "Can I track my sales?",
+            "answer": "Yes. Your dashboard shows sales for today, this week and this month, your customers and average basket, plus simple insights like your best day of the week."
+          },
+          "q4": {
+            "question": "Can I download statements?",
+            "answer": "Yes. Daily, weekly, monthly and annual statements are available as PDF or spreadsheet (CSV)."
+          }
+        }
       },
-      "q5": {
-        "question": "When can I start using Zyra?",
-        "answer": "Zyra is currently in early access. Join the waitlist and we'll notify you as soon as your account is ready to activate."
+      "trust": {
+        "title": "Trust and safety",
+        "items": {
+          "q1": {
+            "question": "Is Zyra a bank?",
+            "answer": "No. Zyra is a financial technology company, not a bank. Payments and currency conversion are handled by licensed, regulated partners."
+          },
+          "q2": {
+            "question": "Is my money safe?",
+            "answer": "Zyra works with licensed, regulated financial partners to handle payments, and uses identity checks to help protect accounts."
+          },
+          "q3": {
+            "question": "Do you verify my identity?",
+            "answer": "Regulated financial services require it, so you may be asked to verify your identity, especially for larger amounts."
+          },
+          "q4": {
+            "question": "How do I contact support?",
+            "answer": "Use the chat button in the app or the Contact page on our website."
+          }
+        }
       }
     }
   }
